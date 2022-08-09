@@ -15,25 +15,27 @@ export default function Menu() {
       </p>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Clientes</Accordion.Header>
+          <Accordion.Header>Usuários</Accordion.Header>
           <Accordion.Body>
             <Nav defaultActiveKey="/admin/clientes" className="flex-column">
               <Nav.Link as={Link} to="/admin/clientes/novo">
-                Novo Cliente
+                Novo Usuário
               </Nav.Link>
               <Nav.Link as={Link} to="/admin/clientes">
-                Listar
+                Usuários
               </Nav.Link>
             </Nav>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Produtos</Accordion.Header>
+          <Accordion.Header>Serviços</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
+              <Nav.Link as={Link} to="/admin/servicos/novo">
+                Cadastrar novo serviço
+              </Nav.Link>
+              <Nav.Link as={Link} to="/admin/servicos">
+                Serviços
+              </Nav.Link>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

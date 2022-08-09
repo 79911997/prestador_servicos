@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { Context } from "../context/AdminClientContext";
 
 export default function ClienteForm() {
@@ -35,68 +36,66 @@ export default function ClienteForm() {
       },
     });
   }
-  
-
+ 
   return (
     <div className="ClienteForm">
-      <h3>Novo Cliente</h3>
+      <h3>Novo Usuário</h3>
       <Form onSubmit={submit}>
         <Row>
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Nome</Form.Label>
             <Form.Control placeholder="Nome" value={firstname} onChange={(event) => setFirstname(event.target.value)} />
           </Form.Group>
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Sobrenome</Form.Label>
             <Form.Control placeholder="Sobrenome" value={lastname} onChange={(event) => setLastname(event.target.value)} />
           </Form.Group>
         </Row>
         <h4>Dados de contato</h4>
         <Row>
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Telefone</Form.Label>
             <Form.Control placeholder="Telefone" value={phone} onChange={(event) => setPhone(event.target.value)} />
           </Form.Group>
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Email</Form.Label>
             <Form.Control type="email" placeholder="Email" value={email} onChange={(event) => setEmail(event.target.value)} />
           </Form.Group>
         </Row>
 
         <h4>Dados de acesso</h4>
         <Form.Group className="mb-3">
-          <Form.Label>Usuário</Form.Label>
           <Form.Control placeholder="Usuário" value={username} onChange={(event) => setUsername(event.target.value)}  />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Senha</Form.Label>
           <Form.Control type="password" placeholder="Senha" value={password} onChange={(event) => setPassword(event.target.value)} />
         </Form.Group>
 
         <h4>Endereço</h4>
         <Row>
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Endereço</Form.Label>
             <Form.Control placeholder="Endereço" value={street} onChange={(event) => setStreet(event.target.value)} />
           </Form.Group>
           <Form.Group as={Col} md={3} className="mb-3">
-            <Form.Label>Número</Form.Label>
             <Form.Control placeholder="Número" value={number} onChange={(event) => setNumber(event.target.value)}/>
           </Form.Group>
         </Row>
         <Row>
           <Form.Group as={Col} md={7} className="mb-3">
-            <Form.Label>Cidade</Form.Label>
             <Form.Control placeholder="Cidade" value={city} onChange={(event) => setCity(event.target.value)}/>
           </Form.Group>
           <Form.Group as={Col} md={5} className="mb-3">
-            <Form.Label>CEP</Form.Label>
             <Form.Control placeholder="CEP" value={zipcode} onChange={(event) => setZipcode(event.target.value)}/>
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">
-          Cadastrar
-        </Button>
+        <Row>
+          <Col>
+              <Button as={Link} to="/" variant="primary" type="submit" value="cancelar">
+              Cancelar
+              </Button>
+          </Col>
+          <Col>
+              <Button variant="primary" type="submit" value="cadastrar">
+              Cadastrar
+              </Button>
+          </Col>
+        </Row>
       </Form>
     </div>
   );

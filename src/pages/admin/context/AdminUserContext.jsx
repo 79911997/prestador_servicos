@@ -8,7 +8,7 @@ export default function AdminUserContext({ children }) {
 
   const login = (email, password) => {
     setUser({
-      name: "Zezinho da Silva",
+      name: "Marcela Cruz",
       email,
       password,
     });

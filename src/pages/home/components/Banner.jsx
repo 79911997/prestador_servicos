@@ -15,8 +15,8 @@ export default function Banner() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Prestador na sua cidade</h3>
+      <p>Aqui você encontra um prestador perto de você!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -26,8 +26,8 @@ export default function Banner() {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Divulgue seu trabalho aqui</h3>
+      <p>Seja um prestador Proserv</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -37,8 +37,8 @@ export default function Banner() {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Encontre aqui os melhores proficionais</h3>
+      <p>Precisa de reparos na sua casa? Entre em contato com um dos nossos prestadores!</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
