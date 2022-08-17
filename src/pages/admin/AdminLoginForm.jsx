@@ -15,7 +15,6 @@ export default function AdminLoginForm() {
   return (
     <Container>
       <Row>
-        <Col></Col>
         <Col>
           <Form onSubmit={submit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">

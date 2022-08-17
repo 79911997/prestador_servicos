@@ -58,7 +58,7 @@ export default function ClienteForm() {
             <Form.Control type="email" placeholder="Email" value={email} onChange={(event) => setEmail(event.target.value)} />
           </Form.Group>
         </Row>
-
+          
         <h4>Dados de acesso</h4>
         <Form.Group className="mb-3">
           <Form.Control placeholder="Usuário" value={username} onChange={(event) => setUsername(event.target.value)}  />
@@ -66,7 +66,7 @@ export default function ClienteForm() {
         <Form.Group className="mb-3">
           <Form.Control type="password" placeholder="Senha" value={password} onChange={(event) => setPassword(event.target.value)} />
         </Form.Group>
-
+        
         <h4>Endereço</h4>
         <Row>
           <Form.Group as={Col} className="mb-3">
@@ -83,7 +83,7 @@ export default function ClienteForm() {
           <Form.Group as={Col} md={5} className="mb-3">
             <Form.Control placeholder="CEP" value={zipcode} onChange={(event) => setZipcode(event.target.value)}/>
           </Form.Group>
-        </Row>
+          </Row>
         <Row>
           <Col>
               <Button as={Link} to="/" variant="primary" type="submit" value="cancelar">

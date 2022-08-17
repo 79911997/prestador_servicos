@@ -9,7 +9,7 @@ import {
   NavItem,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Admin from "../../admin/Admin"
+import Profile from "../../profile/usuarios/UsuarioForm"
 import ClienteForm from "../../admin/clientes/ClienteForm";
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
           >
             <i class="bi bi-person-fill"></i>
             <NavDropdown id="navbarScrollingDropdown">
-              <NavDropdown.Item  as={Link} to="../../admin/Adimin">Novo cadastro</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/profile/novo/UsuarioForm">Novo cadastro</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="../../admin/clientes/ClientesForm">Login</NavDropdown.Item>
             </NavDropdown>
